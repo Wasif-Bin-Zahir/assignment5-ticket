@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="mx-10">
+    <!-- navbar -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Item 1</a></li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl">daisyUI</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Item 1</a></li>
+          <li>
+            <details>
+              <summary>Parent</summary>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a>Item 3</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn">Button</a>
+      </div>
+    </div>
+
+    <!-- mainbody -->
+    <div class="card bg-base-100 image-full">
+      <figure><img src="images/banner.png" alt="Shoes" /></figure>
+      <div class="card-body">
+        <h2 class="card-title text-3xl mx-auto">End to End travell with</h2>
+        <h2 class="card-title text-3xl mx-auto text-lime-500">
+          Wasif Paribahan
+        </h2>
+        <p class="mx-auto">If a dog chews shoes whose shoes does he choose?</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary mx-auto">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- best offer section -->
+    <div class="mx-auto">
+      <h2 class="text-2xl mx-auto">Best offer for you</h2>
+
+      <div class="flex mx-auto">
+        <div class=" bg-yellow-600 flex rounded-md w-1/3 mx-5 ">
+          <div class="px-px py-py">
+            <p class="text-2xl">15% OFF</p>
+            <p class="text-xl">on your next purchase</p>
+            <p>by january 8</p>
+          </div>
+          <div><img src="images/cupon-devider.png" alt="" /></div>
+          <div class="px-px py-py">
+            <p class="text-2xl">NEW15</p>
+            <p>cupon code</p>
+          </div>
+        </div>
+        <div class=" bg-pink-600 flex rounded-md w-1/3 ">
+          <div class="px-px py-py">
+            <p class="text-2xl">20% OFF</p>
+            <p class="text-xl">on your next purchase</p>
+            <p>by january 8</p>
+          </div>
+          <div><img src="images/cupon-devider.png" alt="" /></div>
+          <div class="px-px py-py">
+            <p class="text-2xl">Couple 20</p>
+            <p>cupon code</p>
+          </div>
+        </div>
+
+    </div>
+    <button class="btn btn-outline btn-accent mx-auto my-5">See All Offers</button>
+    </div>
+
+
+    <!-- programming poribohon -->
+    <div class=" bg-pink-600 flex rounded-md ">
+        <div class="px-px py-py">
+            <div class="navbar">
+               <img src="images/bus-logo.png" alt="">
+                <div class="flex flex-col">
+                    <p>Programming poribohon</p>
+                    <p>coach 991</p>
+                </div>  
+                <div>
+                    8 seat Left
+                </div> 
+            </div>
+            <div class="card w-96 bg-primary text-primary-content">
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <img src="images/info-devider.png" alt="" />
+        <div class="px-px py-py">
+        <img src="images/fare.png" alt="">
+          <p>550 taka</p>
+          <p>Per Seat</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-100">
+        <div class="flex justify-between items-stretch mx-4 my-8">
+          <div class="w-1/2 border-r border-gray-300">
+            <h2 class="text-lg font-bold mb-4">Select Your Seat</h2>
+            <div class="grid grid-cols-4 gap-4">
+              <div class="p-2 rounded border border-gray-300 text-center cursor-pointer hover:bg-gray-200">A1</div>
+              <div class="p-2 rounded border border-gray-300 text-center cursor-pointer hover:bg-gray-200">A2</div>
+              <div class="p-2 rounded border border-gray-300 text-center cursor-pointer hover:bg-gray-200">A3</div>
+              <div class="p-2 rounded border border-gray-300 text-center cursor-pointer hover:bg-gray-200">A4</div>
+              <div class="p-2 rounded border border-gray-300 text-center cursor-pointer hover:bg-gray-200">B1</div>
+              <div class="p-2 rounded border border-gray-300 text-center cursor-pointer hover:bg-gray-200">B2</div>
+              <div class="p-2 rounded border border-gray-300 text-center cursor-pointer hover:bg-gray-200">B3</div>
+              <div class="p-2 rounded border border-gray-300 text-center cursor-pointer hover:bg-gray-200">B4</div>
+            </div>
+          </div>
+          <div class="w-1/2 ml-4">
+            <h2 class="text-lg font-bold mb-4">Selected Seats</h2>
+            <table class="w-full mb-4">
+              <thead>
+                <tr>
+                  <th class="border border-gray-300 px-4 py-2">Seat Number 
+                  </th>
+                  <th class="border border-gray-300 px-4 py-2">Class</th>
+                  <th class="border border-gray-300 px-4 py-2">Fare</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Selected seats will be added here -->
+              </tbody>
+            </table>
+            <div class="text-lg font-bold mb-2">Total Price: $<span id="totalPrice">0</span></div>
+            <div class="flex mb-2">
+              <input type="text" class="w-1/2 border border-gray-300 px-2 py-1 mr-2" id="coupon" placeholder="Coupon code">
+              <button class="btn btn-primary" onclick="applyCoupon()">Apply</button>
+            </div>
+            <div class="text-lg font-bold mb-2" id="discount"></div>
+            <div class="text-lg font-bold mb-4">Grand Total: $<span id="grandTotal">0</span></div>
+            <button class="btn btn-primary" onclick="nextPage()">Next</button>
+          </div>
+        </div>
+      
+      <script>
+        // JavaScript code
+        let selectedSeats = [];
+        const seatPrice = 550;
+        const maxTickets = 4;
+        let discount = 0;
+      
+        function updateTotalPrice() {
+          const totalPrice = selectedSeats.length * seatPrice;
+          document.getElementById('totalPrice').textContent = totalPrice;
+          document.getElementById('grandTotal').textContent = totalPrice - discount;
+        }
+      
+        function applyCoupon() {
+          const couponCode = document.getElementById('coupon').value;
+          if (couponCode === 'NEW15') {
+            discount = Math.ceil((selectedSeats.length * seatPrice * 0.15) * 100) / 100;
+            document.getElementById('discount').textContent = `15% Discount Applied: -$${discount}`;
+          } else if (couponCode === 'Couple20') {
+            discount = Math.ceil((selectedSeats.length * seatPrice * 0.2) * 100) / 100;
+            document.getElementById('discount').textContent = `20% Discount Applied: -$${discount}`;
+            document.getElementById('coupon').style.display = 'none';
+            document.querySelector('button').style.display = 'none';
+          } else {
+            alert('Invalid coupon code');
+          }
+          updateTotalPrice();
+        }
+      
+        function selectSeat(seat) {
+          if (selectedSeats.includes(seat)) {
+            selectedSeats = selectedSeats.filter(s => s !== seat);
+          } else {
+            if (selectedSeats.length < maxTickets) {
+              selectedSeats.push(seat);
+            } else {
+              alert('Maximum 4 tickets can be purchased.');
+            }
+          }
+          updateSelectedSeats();
+          updateTotalPrice();
+        }
+      
+        function updateSelectedSeats() {
+          const selectedSeatsContainer = document.querySelector('tbody');
+          selectedSeatsContainer.innerHTML = '';
+          selectedSeats.forEach(seat => {
+            const row = document.createElement('tr');
+            row.innerHTML = `<td class="border border-gray-300 px-4 py-2">${seat}</td><td class="border border-gray-300 px-4 py-2">Class</td><td class="border border-gray-300 px-4 py-2">$${seatPrice}</td>`;
+            selectedSeatsContainer.appendChild(row);
+          });
+        }
+      
+        function nextPage() {
+          // Code to navigate to the next page
+          alert('Navigating to the next page...');
+        }
+      
+        document.addEventListener('DOMContentLoaded', function() {
+          const seats = document.querySelectorAll('.cursor-pointer');
+          seats.forEach(seat => {
+            seat.addEventListener('click', () => {
+              selectSeat(seat.textContent);
+              seat.classList.toggle('bg-green-200');
+            });
+          });
+        });
+      </script>
+      </div>
+  </body>
+</html>
