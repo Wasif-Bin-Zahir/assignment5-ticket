@@ -87,7 +87,7 @@
       <p class="text-2xl text-center">Wasif Paribahan</p>
       <p class="text-center">Wasif parihaban is the cheapest and comfortable travell agency in the country</p>
     </div>
-    <div class="bg-pink-600 flex rounded-md w-full mx-my-20">
+    <div class="bg-slate-200 flex rounded-md w-full mx-my-20">
       <div class="px-px py-py">
         <div class="navbar">
           <img src="images/bus-logo.png" alt="" />
@@ -95,14 +95,19 @@
             <p>Programming poribohon</p>
             <p>coach 991</p>
           </div>
-          <div>8 seat Left</div>
+          <div class="justify-end">8 seat Left</div>
         </div>
-        <div class="card w-96 bg-primary text-primary-content">
+        <div class="card w-full bg-primary text-primary-content">
           <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn">Buy Now</button>
+            <h2 class="card-title">Route</h2>
+            <hr>
+            <h2 class="card-title">Departure Time</h2>
+            <hr>
+            
+            <div class=" flex flex-row">
+              <button class="btn mx-2">Boarding Point - Laxmipur</button>
+              <button class="btn mx-2">Boarding Point - Laxmipur</button>
+              <button class="btn mx-2">Boarding Point - Laxmipur</button>
             </div>
           </div>
         </div>
@@ -170,7 +175,7 @@
             </tbody>
           </table>
           <div class="text-lg font-bold mb-2">
-            Total Price: $<span id="totalPrice">0</span>
+            Total Price:  <span id="totalPrice">0</span> <span>Taka</span>
           </div>
           <div class="flex mb-2">
             <input
@@ -184,9 +189,9 @@
           </div>
           <div class="text-lg font-bold mb-2" id="discount"></div>
           <div class="text-lg font-bold mb-4">
-            Grand Total: $<span id="grandTotal">0</span>
+            Grand Total: <span id="grandTotal">0</span> <span>Taka</span>
           </div>
-          <button class="btn btn-primary" onclick="nextPage()">Next</button>
+          <button class="btn btn-primary"><a href="page2.html">Next</a> </button>
         </div>
       </div>
 
@@ -211,13 +216,13 @@
               Math.ceil(selectedSeats.length * seatPrice * 0.15 * 100) / 100
             document.getElementById(
               "discount"
-            ).textContent = `15% Discount Applied: -$${discount}`
+            ).textContent = `15% Discount Applied: -${discount} Taka`
           } else if (couponCode === "Couple20") {
             discount =
               Math.ceil(selectedSeats.length * seatPrice * 0.2 * 100) / 100
             document.getElementById(
               "discount"
-            ).textContent = `20% Discount Applied: -$${discount}`
+            ).textContent = `20% Discount Applied: -${discount} Taka`
             document.getElementById("coupon").style.display = "none"
             document.querySelector("button").style.display = "none"
           } else {
@@ -245,7 +250,7 @@
           selectedSeatsContainer.innerHTML = ""
           selectedSeats.forEach((seat) => {
             const row = document.createElement("tr")
-            row.innerHTML = `<td class="border border-gray-300 px-4 py-2">${seat}</td><td class="border border-gray-300 px-4 py-2">Class</td><td class="border border-gray-300 px-4 py-2">$${seatPrice}</td>`
+            row.innerHTML = `<td class="border border-gray-300 px-4 py-2">${seat}</td><td class="border border-gray-300 px-4 py-2">Class</td><td class="border border-gray-300 px-4 py-2">${seatPrice} Taka</td>`
             selectedSeatsContainer.appendChild(row)
           })
         }
